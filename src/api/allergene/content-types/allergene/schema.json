@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "allergeni",
+  "info": {
+    "singularName": "allergene",
+    "pluralName": "allergeni",
+    "displayName": "Allergene"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nome"
+    },
+    "descrizione": {
+      "type": "richtext"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "voci_del_menu": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::voce-del-menu.voce-del-menu",
+      "mappedBy": "allergeni"
+    }
+  }
+}
