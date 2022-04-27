@@ -1,8 +1,6 @@
 GET http://localhost:1337/api/voci-del-menu?populate=categoria%2Ccaratteristiche%2Callergeni
 Authorization: bearer 397d709feed53177d072eed21b9480b1920a52ea60bf965d6e875a8caabc2992c1aba51e0cd7484336818fe481d5c2b1d5997eaaeb6891fab4fd416fbf347d3a80a3130eb9433f4a7c8bab6c1380565e276e0f101430ea24a21654d1d5a2fbaf9471a1c1714c7fd55491f45e0be94329760179ffac5f99c310686d8cdaed93ad
 
-
-
 ###
 POST http://localhost:1337/api/voci-del-menu
 content-type: application/json
@@ -38,3 +36,138 @@ Authorization: bearer 397d709feed53177d072eed21b9480b1920a52ea60bf965d6e875a8caa
 
     }
 }
+###
+POST http://localhost:1337/api/voci-del-menu
+content-type: application/json
+accept: application/json
+Authorization: bearer 397d709feed53177d072eed21b9480b1920a52ea60bf965d6e875a8caabc2992c1aba51e0cd7484336818fe481d5c2b1d5997eaaeb6891fab4fd416fbf347d3a80a3130eb9433f4a7c8bab6c1380565e276e0f101430ea24a21654d1d5a2fbaf9471a1c1714c7fd55491f45e0be94329760179ffac5f99c310686d8cdaed93ad
+
+{
+    "data": {
+        "id": 13,
+        "nome": "Grigliata mista di Mare",
+        "slug": "grigliata-mista-di-mare",
+        "Descrizione": "Pescato del giorno, molluschi e crostacei cotti alla griglia.",
+        "prezzo": 22,
+        "categoria": {
+                "id": 3
+        },
+        "caratteristiche": [
+            {
+                "id": 1
+            },
+            {
+                "id": 2
+            }
+            {
+                "id": 3
+            }
+            {
+                "id": 7
+            }
+        ]
+        "allergeni" : [
+            {
+                "id": 1
+            },
+            {
+                "id": 2
+            },
+            {
+                "id": 8
+            }
+        ],
+
+    }
+}
+
+
+
+Fungo Portobello ripieno
+Fungo Portobello cotto su griglia, ripieno di verdure di stagione e pesto fatto in casa. Servito con salsa di senape.
+3
+2 5 6
+10
+10
+
+Margherita
+Pomodoro San Marzano DOP, fior di Latte, basilico.
+4
+5
+2 6
+6
+
+Nduja e Bufala
+Nduja, fior di latte, mozzarella di bufala in uscita, basilico.
+4
+4
+2 6
+10.5
+
+Carpaccio di Mare
+Pomodoro, rucola, carpaccio di Tonno, carpaccio di Salmone, carpaccio di Spada.
+4
+3 7
+2 6
+13
+
+Tiramisù al bicchiere
+Savoiardi al caffè di nostra produzione, crema al mascarpone, spolverizzato con cacao amaro e cannella in polvere.
+5
+-
+2 6 14
+7
+
+Semifreddo al Cocco
+Mousse al cocco, composta di passion fruit e foglie di menta.
+5
+2
+6 14
+7
+
+Barolo docg Cascina Chicco
+Uve: 100% Nebbiolo
+6
+-
+13
+10
+
+Amarone Valpolicella docg Azienda Santi
+Uve: 70% Corvina, 20% Rondinella, 5% Oseleta, 5% Croatina
+CALICE: €3.00
+6
+-
+13
+10
+
+Montepulciano d’Abruzzo Barone di Valforte
+Uve: 100% Montepulciano d’Abruzzo
+6
+-
+13
+5
+
+Gewurtztramuner di Novacella
+Uve: 100% Gewurtztraminer
+7
+-
+13
+10
+
+Chardonnay Falesia 13%vol Az.d’Amico
+Uve: 100% Chardonnay
+CALICE: €8.00
+7
+-
+13
+45
+
+Capolemole Igt Bio Marco Carpineti
+Uve: 100% Bellone
+7
+8
+13
+22
+
+
+
